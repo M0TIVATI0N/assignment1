@@ -2,7 +2,7 @@ public class Rectangle {
     private double width;
     private double height;
     private int id;
-    private static int idGen = 0;
+    private static int idGen = 1;
 
     public Rectangle() {
         this.width = 1.0;
@@ -12,8 +12,8 @@ public class Rectangle {
 
     public Rectangle(double width, double height) {
         this();
-        this.width = width;
-        this.height = height;
+        setHeight(height);
+        setWidth(width);
     }
 
     public double getWidth() {
